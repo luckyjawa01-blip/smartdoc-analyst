@@ -9,7 +9,7 @@ This module provides six specialized agents for document analysis:
 - PlannerAgent: Query decomposition and task planning
 """
 
-from .base_agent import BaseAgent, AgentState
+from .base_agent import BaseAgent, AgentState, AgentContext, AgentResult
 from .orchestrator import OrchestratorAgent
 from .retriever import RetrieverAgent
 from .analyzer import AnalyzerAgent
@@ -20,6 +20,8 @@ from .planner import PlannerAgent
 __all__ = [
     "BaseAgent",
     "AgentState",
+    "AgentContext",
+    "AgentResult",
     "OrchestratorAgent",
     "RetrieverAgent",
     "AnalyzerAgent",
